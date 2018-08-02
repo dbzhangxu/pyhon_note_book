@@ -1,1 +1,26 @@
 Python编码问题：Python2中默认的是ASCII，Python3中默认的是UTF-8
+UTF-8：ASCII一个字节，欧文2个字节，东亚文字3个字节
+
+Python文件中，Python解释器会按照文件头指定的编码方式去解码Python文件到内存，（py3中默认为UTF-8,PY2中默认为ASCII码），
+加载到内存中的py3是Unicode  ，py2中是文件头指示的编码，所以要想全球各国都能正常显示，py2中需要以Unicode编码文件，所以py2中有了Unicode类型。
+
+py2中str类型实际上是bytes类型，为什么要有bytes类型，是因为要表示图片、视频等二进制数据，
+py3中str和bytes不同，str是Unicode，bytes就是二进制，所以不能把str和bytes连接
+py3里想看字符，必须是Unicode编码，其他一切按照bytes显示
+
+ 
+
+三元运算： val = a if a<b else b
+文件编码：chardet 检测文件编码工具包，需要安装
+
+
+
+
+hash函数:被hash的值必须固定，值不可变类型，
+
+python3 module of the week，常用标准库
+
+PyPI Python第三方库
+
+
+
